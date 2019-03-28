@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <meta charset="utf-8">
+    <title>css animation</title>
+    <style>
+      /* The animation code */
+@keyframes example {
+
+  0%   {
+    background-color: red;
+  }
+
+  25%  {
+    background-color: yellow;
+  }
+
+  50%  {
+    background-color: blue;
+    border-radius: 50%;
+    transform: scale(1,5);
+  }
+
+  100% {
+    background-color: green;
+  }
+
+}
+
+/* The element to apply the animation to */
+  #boxter{
+  width: 100px;
+  height: 100px;
+  margin: 50px;
+  background-color: red;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+
+}
+  #doge {
+    width: 100px;
+    height: 100px;
+    margin: 50px;
+  }
+
+</style>
+  </head>
+
+
+  <body>
+    <img src="tenor.gif" alt="dancing doge">
+    <div id="boxter"></div>
+    <div id="doge"></div>
+  </body>
+
+</html>
