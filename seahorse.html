@@ -1,8 +1,41 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
+
   <head>
     <meta charset="utf-8">
     <title>Seahorse Serenity</title>
+    <style>
+  * {box-sizing:border-box;}
+
+Main {
+background: #ddd;
+width: 80%;
+max-width: 900px;
+margin: 0 Auto;
+}
+
+nav{
+background: #695;
+width:20;
+float:left
+}
+
+article{
+background: #3aa;
+width:80%;
+float:left;
+}
+
+img{
+width:300p
+float: left;
+}
+
+clearfix{
+ 
+
+}
+</style>
   </head>
 
 
@@ -13,7 +46,7 @@
       <img src="#" alt="seahorses can kick your butt!" />
     </header>
 
-    <div id="content">
+    <div id="content" class="clearfix">
       <nav>
       <h1>nav stuff</h1>
       </nav>
@@ -24,7 +57,7 @@
       </div>
 
 
-      <footer>
+      <footer class="clearfix">
         <h1>footer stuff</h1>
       </footer>
 
