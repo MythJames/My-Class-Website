@@ -7,7 +7,7 @@
     <style>
   * {box-sizing:border-box;}
 
-Main {
+main {
 background: #00D5FF;
 width: 100%;
 max-width: 900px;
@@ -27,16 +27,21 @@ float:left;
 }
 
 img{
-width:300p
-float: left;
+width:300px;
+float: right;
 }
 
-clearfix{
-
-
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
 }
+
+.copyright{
+  text-align: center;
+}
+
 ul{
-
 
 
 }
@@ -51,7 +56,7 @@ footer li{
 
   <body>
     <main>
-    <header>
+    <header class="clearfix">
       <h1>Seahorse Serenity</h1>
       <img src="seahorse-header.jpg" alt="seahorses can kick your butt!" />
     </header>
@@ -99,7 +104,7 @@ footer li{
           <li><a href="http://seahorse.com/" target="_blank">Seahorse.com</a> |</li>
           <li><a href="http://www.allthesea.com/Seahorses.html" target="_blank">All The Sea</a></li>
         </ul>
-        <p>&copy; Seahorse Serenity 2019</p>
+        <p class="copyright">&copy; Seahorse Serenity 2019</p>
       </footer>
 
   </main>
