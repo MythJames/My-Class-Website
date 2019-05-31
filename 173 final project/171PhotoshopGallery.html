@@ -2,23 +2,60 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Arts 173 Portfolio</title>
-    </head>
+    <title>171 Photoshop Gallery</title>
+  </head>
+<style media="screen">
+
+body{
+      color:#fff;
+      font-family:'Slabo 27px', serif;
+      background:url("darkness.png"),linear-gradient(to right, black 0%, aqua 100%);
+      background-blend-mode: screen;
+      background-attachment:fixed;
+    }
+}
+
+.image {width:90%; margin:0 auto;}
+
+.image::after {
+  content: "";
+clear: both;
+display: table;
+}
+.image img {float:left; max-width: 500px;}
+
+.Description{
+  float:left; width: 50%;
+  text-align: center;
+}
+
+}
 
 
+
+
+</style>
   <body>
-
+    <h1> 171 Photoshop Gallery </h1>
     <nav>
       <ul>
-    <li><a href="173protfolio.html">Home</a></li>
-    <li><a href="Best-of.html">"Best of" Gallery</a></li>
-    <li><a href="102DesignGallery">102 2d Design Gallery</a></li>
+    <li><a href="173portfolio.html">Home</a></li>
+    <li><a href="best-of.html">"Best of" Gallery</a></li>
+    <li><a href="102designGallery.html">102 2d Design Gallery</a></li>
     <li><a href="171PhotoshopGallery.html" class="active">171 Photoshop Gallery</a></li>
     </ul>
     </nav>
-
-    <h1> 171 Photoshop Gallery </h1>
-
-
-</body>
+<div class="image">
+     <img src=" " alt="Image1">
+     <p class="Description"></p>
+</div>
+<div class="image">
+     <img src=" " alt="Image2">
+     <p class="Description"> </p>
+</div>
+<div class="image">
+     <img src=" " alt="image3">
+    <p class="Description"></p>
+</div>
+  </body>
 </html>

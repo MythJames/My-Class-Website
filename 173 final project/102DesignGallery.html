@@ -2,21 +2,73 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Arts 173 Portfolio</title>
+    <title>102 Design Gallery</title>
     </head>
+
+    <style media="screen">
+
+    body{
+          color:#fff;
+          font-family:'Slabo 27px', serif;
+          background:url("darkness.png"),linear-gradient(to right, green 0%, black 100%);
+          background-blend-mode: screen;
+          background-attachment:fixed;
+        }
+    }
+
+    .image {width:90%; margin:0 auto;}
+
+    .image::after {
+      content: "";
+    clear: both;
+    display: table;
+    }
+
+    .image img {float:left; max-width: 500px;}
+
+    .Description{
+      float:left; width: 50%;
+      text-align: center;
+    }
+
+    nav li{
+        display: inline-block;
+
+      }
+      ul{
+        list-style-type:none;
+        margin:0;
+        padding: 0;
+      }
+
+    nav, nav a {color: white;}
+
+    }
+    </style>
 
 
   <body>
     <h1>102 2d Design Gallery</h1>
     <nav>
       <ul>
-    <li><a href="173protfolio.html">Home</a></li>
-    <li><a href="Best-of.html">"Best of" Gallery</a></li>
-    <li><a href="102DesignGallery" class="active">102 2d Design Gallery</a></li>
-    <li><a href="">171 Photoshop Gallery</a></li>
+    <li><a href="173portfolio.html">Home</a></li>
+    <li><a href="best-of.html">"Best of" Gallery</a></li>
+    <li><a href="102designGallery.html" class="active">102 2d Design Gallery</a></li>
+    <li><a href="171PhotoshopGallery.html">171 Photoshop Gallery</a></li>
     </ul>
     </nav>
-
+    <div class="image">
+         <img src="Asymmetry Art.jpg " alt="Image1">
+         <p class="Description"></p>
+    </div>
+    <div class="image">
+         <img src="Emphasis.jpg" alt="Image2">
+         <p class="Description"></p>
+    </div>
+    <div class="image">
+         <img src="Value Assignment.jpg" alt="image3">
+        <p class="Description"></p>
+    </div>
 
 
 
